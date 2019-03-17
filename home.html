@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Décoder</title>
+		<link rel="stylesheet" href="links/style.css"/>
+		<link rel="icon" href="links/img/favicon.ico"/>
+    </head>
+    
+    <body>
+		<header>
+			<h1>Décoder</h1>
+		</header>
+		
+		<nav>
+			<div id="navContent">
+				<img src="links/img/Gravity_Falls_Logo.png" alt="Gravity Falls logo" id="gf"/>
+				<p><a href="links/coder.html">Coder</a></p>
+				<p>Décoder</p>
+			</div>
+		</nav>
+		
+		<section>
+			<h2>Message codé</h2>
+			
+			<form>
+				<p>
+					<input type="radio" name="typeCode" value="vigenere" id="vigenere">
+					<label for="vigenere">Vigenère</label>
+					
+					<input type="radio" name="typeCode" value="atbash" id="atbash">
+					<label for="atbash">Atbash</label>
+					
+					<input type="radio" name="typeCode" value="caesar" id="caesar">
+					<label for="caesar">Caesar</label>
+					
+					<input type="radio" name="typeCode" value="a1z26" id="a1z26">
+					<label for="a1z26">A1Z26</label>
+					
+					<input type="radio" name="typeCode" value="combine" id="compile">
+					<label for="compile">Combiné</label>
+				</p>
+				
+				<p>
+					<textarea name="phraseCodee" id="phraseCodee"></textarea>
+				</p>
+				
+				<p id="zoneMotCle">
+					<label name="motCle">Mot clé :</label>
+					<input type="text" name="motCle" id="motCle">
+				</p>
+				
+				<br/>
+				
+				<div id="centerBouton">
+				<input type="submit" value="Décoder" class="bouton"/>
+				<input type="reset" value="Effacer" class="bouton"/>
+				</div>
+				
+			</form>
+			
+			<h2>Message décodé</h2>
+			<p id="phraseRetournee"></p>
+		</section>
+		
+		<div id="infos" style="visibility:hidden"></div>
+	
+		<footer>
+			<p>Mélanie Collet - 2019</p>
+		</footer>
+		
+        <script src="links/decoder.js"></script>
+    </body>
+</html>
